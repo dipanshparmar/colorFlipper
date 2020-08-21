@@ -1,0 +1,115 @@
+// variables
+$mainColor: rgb(6, 92, 133);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  #notice {
+    position: absolute;
+    background: black;
+    color: white;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5%;
+    visibility: hidden;
+
+    i {
+      font-size: 30px;
+    }
+
+    span {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7vh;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgb(214, 211, 211);
+    font-weight: bold;
+
+    #logo {
+      color: $mainColor;
+    }
+
+    #options {
+      .hex,
+      .simple {
+        cursor: pointer;
+        padding: 5px;
+
+        &:hover {
+          color: $mainColor;
+        }
+      }
+
+      .simple {
+        color: $mainColor;
+      }
+
+      .hex {
+        margin-left: 10px;
+      }
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+
+    h3 {
+      background: rgb(31, 31, 31);
+      padding: 5px 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 2rem;
+    }
+
+    #buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 15%;
+
+      button {
+        outline: none;
+        margin-top: 20px;
+        padding: 8px 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+
+        #notice {
+            visibility: visible;
+        }
+
+        header, main {
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+}

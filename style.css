@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body #notice {
+  position: absolute;
+  background: black;
+  color: white;
+  height: 100vh;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 5%;
+  visibility: hidden;
+}
+
+body #notice i {
+  font-size: 30px;
+}
+
+body #notice span {
+  margin-top: 10px;
+  text-align: center;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7vh;
+  align-items: center;
+  -webkit-box-shadow: 5px 5px 5px #d6d3d3;
+          box-shadow: 5px 5px 5px #d6d3d3;
+  font-weight: bold;
+}
+
+body header #logo {
+  color: #065c85;
+}
+
+body header #options .hex,
+body header #options .simple {
+  cursor: pointer;
+  padding: 5px;
+}
+
+body header #options .hex:hover,
+body header #options .simple:hover {
+  color: #065c85;
+}
+
+body header #options .simple {
+  color: #065c85;
+}
+
+body header #options .hex {
+  margin-left: 10px;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 93vh;
+}
+
+body main h3 {
+  background: #1f1f1f;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+}
+
+body main #buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15%;
+}
+
+body main #buttons button {
+  outline: none;
+  margin-top: 20px;
+  padding: 8px 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  body #notice {
+    visibility: visible;
+  }
+  body header, body main {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
